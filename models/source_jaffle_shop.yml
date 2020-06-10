@@ -18,7 +18,7 @@ sources:
               - not_null
 
           - name: status
-            description: order status
+            description: '{{ doc("status_definitions") }}'
             tests:
               - accepted_values:
                   values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
